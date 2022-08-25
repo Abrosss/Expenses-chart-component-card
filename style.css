@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-color: hsl(27, 66%, 92%);
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chartCart {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(27, 66%, 92%);
+    width: 27rem;
+    height: min-content;
+    padding: 1rem;
+    gap: 1rem;
+}
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: hsl(10, 79%, 65%);
+    color: white;
+}
+.cartHeader div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartHeader div:first-child {
+    align-items: flex-start;
+}
+.cartHeader div span {
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .9;
+}
+.cartHeader svg {
+    opacity: .9;
+    width: 70%;
+}
+#balance {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.cartChart {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background-color: hsl(24, 100%, 98%)
+}
+h2 {
+    color: hsl(25, 47%, 15%);
+}
+#chart {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    height: 12rem;
+    border-bottom: 2px hsl(27, 66%, 92%) solid;
+    padding-bottom: 2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .8rem;
+    width:100%
+}
+#chart .bar .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#chart .bar .stat .statBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+}
+#chart .bar .stat .statBar .percentBar {
+    height: 50%;
+    width: 100%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 4px;
+}
+#chart .bar .stat .statBar .percentBar.max {
+    background-color: hsl(186, 34%, 60%)
+}
+#chart .bar .stat .statBar .percentBar:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.day {
+    color:hsl(28, 10%, 53%)
+}
+.cartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cartFooter div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cartFooter div:last-child{
+    text-align: right;
+}
+
+#totalMonth {
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(25, 47%, 15%);
+}
+ #percent {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+ }
+.small {
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.label {
+    height: min-content;
+    width: min-content;
+    padding: .3rem;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 700;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+}
